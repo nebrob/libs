@@ -1,7 +1,14 @@
-class WebComponents {
+import {Module} from "./Module";
+
+class WebComponents extends Module {
+    static $root = document.getElementById('#root');
+
     constructor() {
+        super();
+
         /** @type {HTMLElement} **/
-        this.$root = document.getElementById('#root');
+
+        console.log('lol');
 
         /** @type {MutationObserverInit} **/
         this.observerConfig = {

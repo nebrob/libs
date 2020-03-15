@@ -1,2 +1,4 @@
 // eslint-disable-next-line no-global-assign
-import Kernel from './kernel';
+export { Kernel } from './kernel';
+export * from './components';
+export * from './modules';
