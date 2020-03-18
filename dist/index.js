@@ -182,14 +182,14 @@ var Kernel = /*#__PURE__*/function () {
   }
   /**
    *
-   * @param {Module} module
+   * @param {Module} _module
    */
 
 
   _createClass(Kernel, [{
     key: "add",
-    value: function add(module) {
-      this.modules.set(module.name, new module(this));
+    value: function add(_module) {
+      this.modules.set(_module.name, new _module(this));
     }
     /**
      * @param {string} moduleName

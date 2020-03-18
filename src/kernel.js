@@ -7,10 +7,10 @@ class Kernel {
 
     /**
      *
-     * @param {Module} module
+     * @param {Module} _module
      */
-    add(module) {
-        this.modules.set(module.name, new module(this));
+    add(_module) {
+        this.modules.set(_module.name, new _module(this));
     }
 
     /**

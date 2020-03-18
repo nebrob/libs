@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let BabelEsmPlugin = require('babel-esm-plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,6 +13,13 @@ let mix = require('laravel-mix');
  */
 
 mix.js('src/index.js', 'dist/');
+mix.webpackConfig(webpack => {
+    return {
+        plugins: [
+            new BabelEsmPlugin()
+        ]
+    };
+});
 
 // Full API
 // mix.js(src, output);
